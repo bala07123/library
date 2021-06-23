@@ -11,8 +11,13 @@ def execute(filters=None):
 
 def get_data(filters):
     print(f"\n\n\n\{filters}\n\n\n\n")
-    #data = frappe.db.sql("""SELECT name,book_name,author,publisher,book_rent,status FROM `tabBooks`;""")
-    data = frappe.db.sql("""SELECT name,book_name,author,publisher,book_rent,status, COUNT(book_rent) OVER (PARTITION BY book_name) AS total_book  FROM `tabBooks`;""")
+    conditions = " AND 1=1 "
+    if(filters.get('name')):conditions += f" AND name LIKE '%{filters.get('name')}'"
+    if(filters.get('book_name')):conditions += f" AND book_name = '{filters.get('book_name')}'"
+    if(filters.get('status')):conditions += f" AND status ='{filters.get('status')}'"
+    
+    
+    data = frappe.db.sql("""SELECT name,book_name,author,publisher,book_rent,status, COUNT(book_rent) OVER (PARTITION BY book_name) AS total_book  FROM `tabBooks`  ;""")
     return data
    
 def get_columns():

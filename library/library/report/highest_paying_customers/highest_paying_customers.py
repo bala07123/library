@@ -11,7 +11,7 @@ def execute(filters=None):
 
 def get_data(filters):
     print(f"\n\n\n\{filters}\n\n\n\n")
-    data = frappe.db.sql("""SELECT name,first_name,outstanding_debt,phone_number,email_address,total_payment FROM `tabMembers` ORDER BY total_payment DESC;""")
+    data = frappe.db.sql("""SELECT name,first_name,outstanding_debt,phone_number,email_address,total_payment FROM `tabMembers`;""")
     return data
    
 def get_columns():

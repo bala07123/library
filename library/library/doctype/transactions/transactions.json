@@ -90,7 +90,7 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2021-06-23 10:44:21.280738",
+ "modified": "2021-06-23 23:51:38.979219",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Transactions",
@@ -110,7 +110,9 @@
   }
  ],
  "quick_entry": 1,
+ "search_fields": "transaction_type",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "transaction_type",
  "track_changes": 1
 }

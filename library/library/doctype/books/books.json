@@ -7,12 +7,13 @@
  "field_order": [
   "book_name",
   "author",
-  "description",
   "isbn",
   "status",
   "publisher",
+  "book_rent",
+  "column_break_7",
   "image",
-  "book_rent"
+  "description"
  ],
  "fields": [
   {
@@ -27,6 +28,7 @@
    "fieldname": "author",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Book Author",
    "reqd": 1
   },
@@ -68,9 +70,13 @@
    "fieldname": "book_rent",
    "fieldtype": "Data",
    "label": "Book Rent"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
   }
  ],
- "modified": "2021-06-22 20:04:14.644896",
+ "modified": "2021-06-23 23:59:09.666991",
  "modified_by": "Administrator",
  "module": "Library",
  "name": "Books",

@@ -24,7 +24,7 @@ frappe.ui.form.on('Transactions', 'member', function (frm) {
 //Adding filter in Books doctype books field based on Books doctype status field value
 frappe.ui.form.on("Transactions", "onload", function(frm){
 	
-	//frm.set_df_property("bar_code", "reqd", true);
+	
     frm.set_query("books", function(){
 		return {
             "filters": [
