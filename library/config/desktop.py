@@ -6,9 +6,11 @@ def get_data():
 	return [
 		{
 			"module_name": "Library",
+			"category": "Modules",
 			"color": "#6DAFC9",
 			"icon": "icon-linux",
 			"type": "module",
-			"label": _("Library")
+			"label": _("Library"),	
+			"onboard_present": 1
 		}
 	]

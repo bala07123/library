@@ -1,0 +1,98 @@
+{
+ "autoname": "field:isbn",
+ "creation": "2021-06-19 21:33:00.135204",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "book_name",
+  "author",
+  "description",
+  "isbn",
+  "status",
+  "publisher",
+  "image",
+  "book_rent"
+ ],
+ "fields": [
+  {
+   "fieldname": "book_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Book Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Book Author",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ISBN Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "Available",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Book Status",
+   "options": "\nIssued\nAvailable",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Data",
+   "label": "Book Publisher",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "book_rent",
+   "fieldtype": "Data",
+   "label": "Book Rent"
+  }
+ ],
+ "modified": "2021-06-22 20:04:14.644896",
+ "modified_by": "Administrator",
+ "module": "Library",
+ "name": "Books",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "librarian",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "author,book_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "book_name",
+ "track_changes": 1
+}

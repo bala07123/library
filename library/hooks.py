@@ -13,7 +13,7 @@ app_license = "MIT"
 
 # Includes in <head>
 # ------------------
-
+fixtures = ["Books","Members"]
 # include js, css files in header of desk.html
 # app_include_css = "/assets/library/css/library.css"
 # app_include_js = "/assets/library/js/library.js"

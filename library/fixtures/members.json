@@ -1,0 +1,47 @@
+[
+ {
+  "address": "nagercoil",
+  "docstatus": 0,
+  "doctype": "Members",
+  "email_address": "murugan.mu@gmail.com",
+  "first_name": "Bala Murugan",
+  "last_name": "A",
+  "modified": "2021-06-21 22:56:13.196802",
+  "name": "MEM00001",
+  "outstanding_debt": "0.0",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "phone_number": "09677922984"
+ },
+ {
+  "address": null,
+  "docstatus": 0,
+  "doctype": "Members",
+  "email_address": "murugan.mu@gmail.com",
+  "first_name": "Jegan",
+  "last_name": "A",
+  "modified": "2021-06-22 00:04:26.997063",
+  "name": "MEM00002",
+  "outstanding_debt": "0.0",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "phone_number": "9675588477"
+ },
+{
+  "address": null,
+  "docstatus": 0,
+  "doctype": "Members",
+  "email_address": "bala@gmail.com",
+  "first_name": "Bala Krishnan",
+  "last_name": "B",
+  "modified": "2021-06-22 00:04:26.997063",
+  "name": "MEM00003",
+  "outstanding_debt": "0.0",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "phone_number": "9777988477"
+ }
+]

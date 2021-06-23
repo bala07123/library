@@ -1,0 +1,116 @@
+{
+ "autoname": "TRN.######",
+ "creation": "2021-06-19 22:57:00.621430",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "transaction_type",
+  "transaction_date",
+  "books",
+  "books_name",
+  "column_break_4",
+  "member",
+  "member_name",
+  "rent",
+  "paid",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Issue",
+   "fieldname": "transaction_type",
+   "fieldtype": "Select",
+   "label": "Transaction Type",
+   "options": "\nIssue\nReturn",
+   "reqd": 1
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Transaction Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "books",
+   "fieldtype": "Link",
+   "label": "Books",
+   "options": "Books",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "books.book_name",
+   "fieldname": "books_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Books Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member Number",
+   "options": "Members",
+   "reqd": 1
+  },
+  {
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "books.book_rent",
+   "fieldname": "rent",
+   "fieldtype": "Data",
+   "label": "Book Rent",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.transaction_type =='Return'\n",
+   "fieldname": "paid",
+   "fieldtype": "Check",
+   "label": "Paid",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Transactions",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-06-23 10:44:21.280738",
+ "modified_by": "Administrator",
+ "module": "Library",
+ "name": "Transactions",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "librarian",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
